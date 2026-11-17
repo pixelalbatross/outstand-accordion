@@ -1,0 +1,29 @@
+.wp-block-outstand-accordion-header {
+	margin-block: 0;
+}
+
+// The button fills the heading and takes over its flex layout.
+.wp-block-outstand-accordion-header__toggle {
+	align-items: inherit;
+	appearance: none;
+	background: none;
+	border: 0;
+	border-radius: 0;
+	box-sizing: border-box;
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: inherit;
+	font: inherit;
+	gap: inherit;
+	justify-content: inherit;
+	letter-spacing: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	text-decoration: inherit;
+	text-transform: inherit;
+	width: 100%;
+	word-spacing: inherit;
+}

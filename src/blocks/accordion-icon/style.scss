@@ -1,0 +1,32 @@
+$open-header: ".wp-block-outstand-accordion-item.is-open > .wp-block-outstand-accordion-header";
+
+.wp-block-outstand-accordion-icon {
+	display: inline-flex;
+	flex: none;
+	line-height: 0;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition: transform 0.2s ease;
+	}
+}
+
+.wp-block-outstand-accordion-icon__svg {
+	fill: currentcolor;
+	height: var(--outstand-accordion-icon-size, 1.25em);
+	width: var(--outstand-accordion-icon-size, 1.25em);
+}
+
+// A style with one icon turns it upside down while its item is open.
+#{$open-header} .wp-block-outstand-accordion-icon:not(.has-open-icon) {
+	transform: rotate(180deg);
+}
+
+// A style with two icons shows the open icon while its item is open.
+.wp-block-outstand-accordion-icon.has-open-icon .is-open,
+#{$open-header} .wp-block-outstand-accordion-icon.has-open-icon .is-closed {
+	display: none;
+}
+
+#{$open-header} .wp-block-outstand-accordion-icon.has-open-icon .is-open {
+	display: block;
+}

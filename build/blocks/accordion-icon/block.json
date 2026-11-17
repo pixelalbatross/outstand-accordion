@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "outstand/accordion-icon",
+  "version": "1.0.0",
+  "title": "Accordion Icon",
+  "category": "design",
+  "icon": "arrow-down-alt2",
+  "parent": [
+    "outstand/accordion-header"
+  ],
+  "description": "The icon that shows whether an accordion item is open.",
+  "keywords": [
+    "icon",
+    "chevron",
+    "plus"
+  ],
+  "textdomain": "outstand-accordion",
+  "attributes": {
+    "iconKey": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    }
+  },
+  "usesContext": [
+    "outstand/accordion-icon-key",
+    "outstand/accordion-icon-width"
+  ],
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "color": {
+      "background": false,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

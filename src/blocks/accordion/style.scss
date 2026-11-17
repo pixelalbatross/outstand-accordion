@@ -1,0 +1,30 @@
+.wp-block-outstand-accordion {
+	box-sizing: border-box;
+}
+
+// A closed panel keeps its content for find-in-page. Only its box collapses.
+@media not (scripting: none) {
+
+	.wp-block-outstand-accordion-panel[hidden] {
+		border: none !important;
+		box-shadow: none !important;
+		margin-block-start: 0;
+		padding: 0 !important;
+	}
+}
+
+// Without scripting the buttons can't toggle, so every panel stays readable.
+@media (scripting: none) {
+
+	.wp-block-outstand-accordion-panel[hidden] {
+		content-visibility: visible;
+	}
+
+	.wp-block-outstand-accordion-header__toggle {
+		cursor: default;
+	}
+
+	.wp-block-outstand-accordion-icon {
+		display: none;
+	}
+}

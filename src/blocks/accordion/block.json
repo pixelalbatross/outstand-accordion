@@ -1,0 +1,127 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "outstand/accordion",
+  "version": "1.0.0",
+  "title": "Accordion",
+  "category": "design",
+  "icon": "list-view",
+  "description": "Display content in collapsible sections.",
+  "keywords": [ "accordion", "collapse", "section", "panel", "faq" ],
+  "textdomain": "outstand-accordion",
+  "allowedBlocks": [ "outstand/accordion-item" ],
+  "attributes": {
+    "headingLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "iconKey": {
+      "type": "string",
+      "default": "chevron-down"
+    },
+    "iconWidth": {
+      "type": "string"
+    }
+  },
+  "providesContext": {
+    "outstand/accordion-heading-level": "headingLevel",
+    "outstand/accordion-icon-key": "iconKey",
+    "outstand/accordion-icon-width": "iconWidth"
+  },
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "align": [ "wide", "full" ],
+    "color": {
+      "background": true,
+      "gradients": true,
+      "heading": true,
+      "link": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": [ "top", "bottom" ],
+      "blockGap": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "layout": true,
+    "shadow": true,
+    "interactivity": true
+  },
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "outstand/accordion-item",
+        "attributes": {
+          "isOpen": true
+        },
+        "innerBlocks": [
+          {
+            "name": "outstand/accordion-header",
+            "attributes": {
+              "title": "What is an accordion?"
+            },
+            "innerBlocks": [ { "name": "outstand/accordion-icon" } ]
+          },
+          {
+            "name": "outstand/accordion-panel",
+            "innerBlocks": [
+              {
+                "name": "core/paragraph",
+                "attributes": {
+                  "content": "A list of headers that each show or hide a section of content."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "outstand/accordion-item",
+        "innerBlocks": [
+          {
+            "name": "outstand/accordion-header",
+            "attributes": {
+              "title": "When should I use one?"
+            },
+            "innerBlocks": [ { "name": "outstand/accordion-icon" } ]
+          },
+          {
+            "name": "outstand/accordion-panel",
+            "innerBlocks": [
+              {
+                "name": "core/paragraph",
+                "attributes": {
+                  "content": "When readers need only some sections of a long page."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "viewScriptModule": "file:./view.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

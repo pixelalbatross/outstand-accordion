@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "outstand/accordion-item",
+  "version": "1.0.0",
+  "title": "Accordion Item",
+  "category": "design",
+  "icon": "excerpt-view",
+  "parent": [
+    "outstand/accordion"
+  ],
+  "description": "A header and the section it shows or hides.",
+  "textdomain": "outstand-accordion",
+  "allowedBlocks": [
+    "outstand/accordion-header",
+    "outstand/accordion-panel"
+  ],
+  "attributes": {
+    "isOpen": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {
+    "outstand/accordion-is-open": "isOpen"
+  },
+  "usesContext": [
+    "outstand/accordion-heading-level"
+  ],
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "color": {
+      "background": true,
+      "gradients": true,
+      "heading": true,
+      "link": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": [
+        "top",
+        "bottom"
+      ]
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "shadow": true,
+    "interactivity": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

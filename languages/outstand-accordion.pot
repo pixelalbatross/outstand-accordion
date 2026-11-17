@@ -1,0 +1,280 @@
+# Copyright (C) 2026 Outstand
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Outstand Accordion 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/outstand-accordion\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-17T19:08:56+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: outstand-accordion\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+#: includes/Icons.php:58
+msgid "Outstand Accordion"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://outstand.site/?utm_source=wp-plugins&utm_medium=outstand-accordion&utm_campaign=plugin-uri"
+msgstr ""
+
+#. Description of the plugin
+#: plugin.php
+msgid "Accessible accordion blocks for the block editor, powered by the Interactivity API."
+msgstr ""
+
+#. Author of the plugin
+#: plugin.php
+msgid "Outstand"
+msgstr ""
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "https://outstand.site/?utm_source=wp-plugins&utm_medium=outstand-accordion&utm_campaign=author-uri"
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:137
+msgid "No Accordion Block accordions found."
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:161
+msgid "The --post_type option needs at least one post type."
+msgstr ""
+
+#. translators: %s: post type name.
+#: includes/CLI/MigrateCommand.php:167
+#, php-format
+msgid "The \"%s\" post type does not exist."
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:197
+msgid "The --include option needs at least one post ID."
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:261
+#: includes/CLI/MigrateCommand.php:332
+msgid "would convert"
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:261
+#: includes/CLI/MigrateCommand.php:332
+msgid "converted"
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:266
+msgid "skipped: the scheduled date has passed, and saving would publish the post"
+msgstr ""
+
+#. translators: %s: error message.
+#: includes/CLI/MigrateCommand.php:286
+#, php-format
+msgid "failed: %s"
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:289
+msgid "failed: the post was not saved"
+msgstr ""
+
+#: includes/CLI/MigrateCommand.php:345
+msgid "failed: the widgets were not saved"
+msgstr ""
+
+#. translators: %d: number of posts.
+#: includes/CLI/MigrateCommand.php:407
+#, php-format
+msgid "%d post(s) skipped. See the status column."
+msgstr ""
+
+#. translators: 1: number of accordions, 2: number of posts and widgets, 3: number of failed saves.
+#: includes/CLI/MigrateCommand.php:412
+#, php-format
+msgid "Converted %1$d accordion(s) in %2$d post(s) and widget(s). %3$d save(s) failed. See the status column."
+msgstr ""
+
+#. translators: 1: number of accordions, 2: number of posts and widgets.
+#: includes/CLI/MigrateCommand.php:417
+#, php-format
+msgid "%1$d accordion(s) in %2$d post(s) and widget(s) would be converted. Run again without --dry-run to save."
+msgstr ""
+
+#. translators: 1: number of accordions, 2: number of posts and widgets.
+#: includes/CLI/MigrateCommand.php:419
+#, php-format
+msgid "Converted %1$d accordion(s) in %2$d post(s) and widget(s)."
+msgstr ""
+
+#: includes/Icons.php:63
+msgid "Chevron down"
+msgstr ""
+
+#: includes/Icons.php:64
+msgid "Plus"
+msgstr ""
+
+#: includes/Icons.php:65
+msgid "Minus"
+msgstr ""
+
+#: includes/Icons.php:66
+msgid "Caret down"
+msgstr ""
+
+#: includes/Icons.php:67
+msgid "Arrow down"
+msgstr ""
+
+#: includes/Icons.php:117
+msgid "Chevron"
+msgstr ""
+
+#: includes/Icons.php:121
+msgid "Plus / Minus"
+msgstr ""
+
+#: includes/Icons.php:126
+msgid "Caret"
+msgstr ""
+
+#: includes/Icons.php:130
+msgid "Arrow"
+msgstr ""
+
+#: build/blocks/accordion-header/index.js:1
+msgid "Accordion title"
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+#: build/blocks/accordion/index.js:1
+msgid "Style"
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+#: build/blocks/accordion/index.js:1
+msgid "Size"
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+#: build/blocks/accordion/index.js:1
+msgid "Icon"
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+msgid "This item overrides the accordion icon."
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+msgid "This item uses the accordion icon."
+msgstr ""
+
+#: build/blocks/accordion-icon/index.js:1
+msgid "Use accordion icon"
+msgstr ""
+
+#: build/blocks/accordion-item/index.js:1
+msgid "Settings"
+msgstr ""
+
+#: build/blocks/accordion-item/index.js:1
+msgid "Open by default"
+msgstr ""
+
+#: build/blocks/accordion-item/index.js:1
+msgid "Shows the panel when the page loads."
+msgstr ""
+
+#: build/blocks/accordion-header/block.json
+msgctxt "block title"
+msgid "Accordion Header"
+msgstr ""
+
+#: build/blocks/accordion-header/block.json
+msgctxt "block description"
+msgid "A heading with the button that shows or hides the panel."
+msgstr ""
+
+#: build/blocks/accordion-icon/block.json
+msgctxt "block title"
+msgid "Accordion Icon"
+msgstr ""
+
+#: build/blocks/accordion-icon/block.json
+msgctxt "block description"
+msgid "The icon that shows whether an accordion item is open."
+msgstr ""
+
+#: build/blocks/accordion-icon/block.json
+msgctxt "block keyword"
+msgid "icon"
+msgstr ""
+
+#: build/blocks/accordion-icon/block.json
+msgctxt "block keyword"
+msgid "chevron"
+msgstr ""
+
+#: build/blocks/accordion-icon/block.json
+msgctxt "block keyword"
+msgid "plus"
+msgstr ""
+
+#: build/blocks/accordion-item/block.json
+msgctxt "block title"
+msgid "Accordion Item"
+msgstr ""
+
+#: build/blocks/accordion-item/block.json
+msgctxt "block description"
+msgid "A header and the section it shows or hides."
+msgstr ""
+
+#: build/blocks/accordion-panel/block.json
+msgctxt "block title"
+msgid "Accordion Panel"
+msgstr ""
+
+#: build/blocks/accordion-panel/block.json
+msgctxt "block description"
+msgid "The section an accordion header shows or hides."
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block title"
+msgid "Accordion"
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block description"
+msgid "Display content in collapsible sections."
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "collapse"
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "panel"
+msgstr ""
+
+#: build/blocks/accordion/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr ""
