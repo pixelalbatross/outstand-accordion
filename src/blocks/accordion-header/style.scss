@@ -1,4 +1,5 @@
-.wp-block-outstand-accordion-header {
+// The item selector beats theme rules such as `.content h2` on margins.
+.wp-block-outstand-accordion-item > .wp-block-outstand-accordion-header {
 	margin-block: 0;
 }
 
