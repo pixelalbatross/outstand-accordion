@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-18
+
+### Fixed
+
+- Theme rules for content headings, such as a top margin on `.content h2`, no longer add space above accordion headers.
+
 ## [1.0.0] - 2026-11-17
 
 ### Added
@@ -18,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Editor transform and `wp outstand-accordion migrate` command to convert Accordion Block (`pixelalbatross/accordion`) accordions in posts, templates, synced patterns and block widgets. See [MIGRATING.md](MIGRATING.md).
 - Accordion Block accordions show on the front end as Outstand Accordion accordions while Accordion Block is inactive.
 
-[Unreleased]: https://github.com/pixelalbatross/outstand-accordion/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/pixelalbatross/outstand-accordion/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/pixelalbatross/outstand-accordion/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/pixelalbatross/outstand-accordion/releases/tag/1.0.0
